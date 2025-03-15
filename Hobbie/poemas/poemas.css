@@ -1,0 +1,233 @@
+*{
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;  /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+  }
+
+
+body {
+    display: flex; /* Usado para criar um layout flexível */
+    justify-content: center; /* Alinha o conteúdo no centro horizontalmente */
+    align-items: center; /* Alinha o conteúdo no centro verticalmente */
+    height: 100vh; /* A altura do corpo ocupa 100% da altura da janela de visualização */
+    margin: 0; /* Remove a margem padrão do body */
+    background-color: #b880c5;  /* Define a cor de fundo para um tom cinza claro */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para Arial, ou qualquer fonte sans-serif disponível */
+}
+
+.conjunto{
+
+  justify-content: space-between;
+  display: flex;
+ 
+}
+
+
+.envelope {
+       position: relative; /* Torna o envelope um elemento posicionado relativamente ao seu contêiner */
+       width: 150px; /* Define a largura do envelope */
+       height: 100px; /* Define a altura do envelope */
+       background-color: #793395; /* Define o fundo do envelope com uma cor roxa */
+       border: 2px solid #793395; /* Borda roxa de 2px em torno do envelope */
+       border-radius: 5px; /* Borda arredondada de 5px para um efeito de cantos suavizados */
+       overflow: visible; /* Permite que o conteúdo do envelope (como a carta) transborde para fora */
+       cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o envelope */
+       box-shadow: 0 4px 6px rgb(169, 88, 169); /* Aplica uma sombra ao envelope com deslocamento e cor personalizada */
+       transition: transform 0.3s; /* Aplica uma transição suave no efeito de transformação */
+       transform: translateX(20px);
+}
+
+
+.envelope:hover {
+    transform: scale(1.1); /* Quando o mouse passa sobre o envelope, ele aumenta 10% */
+}
+
+
+.envelope::before {
+       content: ""; /* Cria um conteúdo vazio antes do envelope (flap) */
+       position: absolute; /* Posiciona a aba do envelope de forma absoluta em relação ao envelope */
+       top: 0; /* Posiciona a aba no topo do envelope */
+       left: 0; /* Posiciona a aba à esquerda do envelope */
+       width: 100%; /* Faz a aba ter a mesma largura do envelope */
+       height: 100%; /* Faz a aba ter a mesma altura do envelope */
+       background-color: #ad65c9; /* Define a cor de fundo da aba para um tom de roxo mais claro */
+       clip-path: polygon(0 0, 50% 50%, 100% 0); /* Cria um triângulo com clip-path */
+       transition: transform 0.5s; /* Aplica uma transição suave na rotação da aba */
+       transform-origin: top; /* A rotação da aba ocorrerá a partir do topo */
+       z-index: 2; /* Coloca a aba acima da carta */
+}
+
+
+.envelope:hover::before {
+    transform: rotateX(-180deg); /* Ao passar o mouse, a aba do envelope gira 180 graus no eixo X */
+}
+
+
+.letter {
+       position: absolute; /* Posiciona a carta de forma absoluta em relação ao envelope */
+       top: 100%; /* Posiciona a carta fora do envelope (abaixo) */
+       left: 50%; /* Centraliza a carta horizontalmente */
+       width: calc(100% - 20px); /* Ajusta a largura da carta para ser um pouco menor que a largura do envelope */
+       padding: 10px; /* Adiciona espaçamento interno na carta */
+       background-color: #793395; /* Define a cor de fundo da carta como a mesma cor do envelope */
+       border: 1px solid #ddd; /* Define uma borda clara em torno da carta */
+       border-radius: 3px; /* Arredonda os cantos da carta */
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aplica uma sombra sutil à carta */
+       transform: translateX(-50%) translateY(0); /* Centraliza a carta horizontalmente e a mantém fora da tela verticalmente */
+       transition: top 0.5s ease, opacity 0.5s ease; /* Aplica transições suaves na posição e opacidade da carta */
+       display: flex; /* Define o layout flexível para a carta */
+       flex-direction: column; /* Organiza o conteúdo da carta em uma coluna */
+       justify-content: flex-start; /* Alinha o conteúdo no topo da carta */
+       align-items: center; /* Centraliza o conteúdo da carta horizontalmente */
+       z-index: 1; /* Coloca a carta abaixo da aba do envelope */
+       opacity: 0; /* Inicialmente, a carta é invisível */
+}
+
+
+.envelope:hover .letter {
+    top: 10%; /* Move a carta para 10% de distância do topo do envelope */
+    opacity: 1; /* Torna a carta visível ao passar o mouse sobre o envelope */
+}
+
+
+.letter p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    padding: 0; /* Remove o padding do parágrafo */
+    font-size: 14px; /* Define o tamanho da fonte como 14px */
+    color: #fff; /* Define a cor do texto como branca */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    word-wrap: break-word; /* Permite que palavras longas quebrem para a próxima linha */
+    white-space: normal; /* Permite que o texto se quebre normalmente em várias linhas */
+}
+
+
+
+
+
+
+
+
+/*estilizando as listas utilizadas para o menu*/
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-size: 20px;
+    height: 70px;
+    background-color: black }
+      
+    /*estilizando a div do proprio menu*/
+    #menu {
+    width: 100%;
+    height: 90%;
+    font-family: "Open Sans", sans-serif;
+    position: fixed; 
+    }
+      
+    /*estilizando uma parte especifica do menu(minha pa*/
+    .my{
+      padding-right: 60%;
+    }
+      
+      
+    /*estilizando li do menu */
+    a {
+    color: #fff;
+    text-decoration: none;
+    position:relative; }
+      
+      
+    /*ação ao rolar o cursor do mouse no MENU*/
+    a:hover{
+    color: blueviolet;}
+      
+      
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .project:after{
+    content: "";
+    background-color:  plum;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: 0.9s;
+    }
+      
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .project:hover:after{
+    width: 100%;
+    }
+      
+      
+    /*ação ao rolar o cursor do mouse(ACADEMICO)*/
+    .academico:after{
+      content: "";
+      background-color:  plum;
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -10px;
+      position: absolute;
+      transition: 0.9s;
+      }
+      
+      
+    /*ação ao rolar o cursor do mouse(ACADEMICO)*/
+    .academico:hover:after{
+      width: 100%;
+      }
+      
+    .hobbie:after{
+      content: "";
+      background-color: plum;
+      width: 0;
+      height: 5px;
+      left: 0;
+      bottom: -10px;
+      position: absolute;
+      transition: 0.9s;
+    }
+      
+    .hobbie:hover:after{
+      width: 100%;
+    }
+      
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .friends:after{
+      content: "";
+      background-color:  plum;
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -10px;
+      position: absolute;
+      transition: 0.9s;
+      }
+      
+      /*ação ao rolar o cursor do mouse(PROJECT)*/
+      .friends:hover:after{
+      width: 100%;
+      }
+      
+      /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .family:after{
+      content: "";
+      background-color:  plum;
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -10px;
+      position: absolute;
+      transition: 0.9s;
+      }
+      
+      /*ação ao rolar o cursor do mouse(PROJECT)*/
+      .family:hover:after{
+      width: 100%;
+      }

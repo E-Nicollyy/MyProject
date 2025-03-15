@@ -1,0 +1,71 @@
+header nav a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 500;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
+  color: #e50914;
+}
+
+
+    /*estilizando li do menu */
+    .mysite{
+      color: #fff;
+      text-decoration: none;
+      position:relative; }
+      
+      
+      /*ação ao rolar o cursor do mouse no MENU*/
+      .mysite:hover{
+      color: #fff;
+    }
+      
+      
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .mysite:after{
+      content: "";
+      background-color:  rgb(194, 68, 66);
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -1px;
+      position: absolute;
+      transition: 0.9s;
+      }
+      
+      /*ação ao rolar o cursor do mouse(MY SITE)*/
+      .mysite:hover:after{
+      width: 100%;
+      }
+
+    /*estilizando li do menu */
+    .academico{
+      color: #fff;
+      text-decoration: none;
+      position:relative; }
+      
+      
+      /*ação ao rolar o cursor do mouse no MENU*/
+      .academico:hover{
+      color: #fff;
+    }
+      
+      
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .academico:after{
+      content: "";
+      background-color:  rgb(194, 68, 66);
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -1px;
+      position: absolute;
+      transition: 0.9s;
+      }
+      
+      /*ação ao rolar o cursor do mouse(MY SITE)*/
+      .academico:hover:after{
+      width: 100%;
+      }

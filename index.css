@@ -1,0 +1,168 @@
+*{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 0;
+}
+  
+/*Estilizando todo o corpo do documento*/
+body{
+  background-color: rgb(34, 34, 33);
+  align-items: center;
+}  
+
+
+  /*Posicionando o footer*/
+  footer{
+   bottom:0;
+   text-align: center;
+   width:100%;
+   position: fixed;
+   margin-top: 100%;
+   background-color: black;
+  }
+  
+  .rodape {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    padding-top: 1%;
+  }
+  
+
+/* Configurando a imagem principal*/
+.primeiro {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  transform: translateX(-500px -500px);
+  border-radius: solid;
+ 
+  }
+
+
+/*estilizando as listas utilizadas para o menu*/
+ul{
+display: flex;
+list-style-type: none;
+align-items: center;
+font-size: 16px;
+height: 70px;
+background-color: black }
+
+/*estilizando a div do proprio menu*/
+#menu {
+width: 100%;
+height: 80%;
+font-family: "Open Sans", sans-serif;
+position: fixed; 
+margin: 0 auto;
+}
+
+
+/*estilizando uma parte especifica do menu(minha pagina)*/
+.my{
+  padding-right: 60%;
+}
+
+
+/*estilizando li do menu */
+a {
+color: #fff;
+text-decoration: none;
+position:relative; }
+
+
+/*ação ao rolar o cursor do mouse no MENU*/
+a:hover{
+color: blueviolet;}
+
+
+/*ação ao rolar o cursor do mouse(HOBBIE)*/
+.hobbie:after{
+content: "";
+background-color:  plum;
+width: 0;
+height: 3px;
+left: 0;
+bottom: -10px;
+position: absolute;
+transition: 0.9s;
+}
+
+/*ação ao rolar o cursor do mouse(HOBBIE)*/
+.hobbie:hover:after{
+width: 100%;
+}
+
+
+/*ação ao rolar o cursor do mouse(PROJECT)*/
+.project:after{
+content: "";
+background-color:  plum;
+width: 0;
+height: 3px;
+left: 0;
+bottom: -10px;
+position: absolute;
+transition: 0.9s;
+}
+
+/*ação ao rolar o cursor do mouse(PROJECT)*/
+.project:hover:after{
+width: 100%;
+}
+
+
+/*ação ao rolar o cursor do mouse(ACADEMICO)*/
+.academico:after{
+  content: "";
+  background-color:  plum;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
+  transition: 0.9s;
+  }
+
+
+/*ação ao rolar o cursor do mouse(ACADEMICO)*/
+.academico:hover:after{
+  width: 100%;
+  }
+
+/*ação ao rolar o cursor do mouse(PROJECT)*/
+.friends:after{
+  content: "";
+  background-color:  plum;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
+  transition: 0.9s;
+  }
+  
+  /*ação ao rolar o cursor do mouse(PROJECT)*/
+  .friends:hover:after{
+  width: 100%;
+  }
+  
+  /*ação ao rolar o cursor do mouse(PROJECT)*/
+.family:after{
+  content: "";
+  background-color:  plum;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -10px;
+  position: absolute;
+  transition: 0.9s;
+  }
+  
+  /*ação ao rolar o cursor do mouse(PROJECT)*/
+  .family:hover:after{
+  width: 100%;
+  }
+  

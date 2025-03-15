@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+    
+    /*estilizando li do menu */
+    a {
+    color: #fff;
+    text-decoration: none;
+    position:relative; }
+    
+    
+    /*ação ao rolar o cursor do mouse no MENU*/
+    a:hover{
+    color: rgb(106,141,113);
+  }
+    
+    
+    /*ação ao rolar o cursor do mouse(SERIE)*/
+    #serie:after{
+    content: "";
+    background-color: rgb(106, 141, 113);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    transition: 0.9s;
+    }
+    
+    /*ação ao rolar o cursor do mouse(SERIE)*/
+    #serie:hover:after{
+    width: 100%;
+    }
+    
+    
+    /*ação ao rolar o cursor do mouse(FUTEBOL)*/
+    #futebol:after{
+    content: "";
+    background-color:  rgb(106, 141, 113);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    transition: 0.9s;
+    }
+    
+    /*ação ao rolar o cursor do mouse(FUTEBOL)*/
+    #futebol:hover:after{
+    width: 100%;
+    }
+    
+    
+  /*ação ao rolar o cursor do mouse(PROJECT)*/
+  .mysite:after{
+    content: "";
+    background-color:  rgb(106, 141, 113);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    transition: 0.9s;
+    }
+    
+    /*ação ao rolar o cursor do mouse(MY SITE)*/
+    .mysite:hover:after{
+    width: 100%;
+    }
+
+    /*ação ao rolar o cursor do mouse(POEMAS)*/
+    #poemas:after{
+      content: "";
+      background-color:  rgb(106, 141, 113);
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -10px;
+      position: absolute;
+      transition: 0.9s;
+      }
+    
+    
+    /*ação ao rolar o cursor do mouse(POEMAS)*/
+    #poemas:hover:after{
+      width: 100%;
+      }
+
+      .hero{
+        background-position: right;
+        height: 90vh;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.divider{
+  height: 2px;
+}

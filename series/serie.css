@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+
+    .hero{
+     background: url(./Netflix-Symbol.png);
+     background-repeat: no-repeat;
+     background-position: right;
+     height: 90vh;
+     margin-top: 50px;
+    
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+ 
+ 
+    /*estilizando li do menu */
+    .mysite{
+        color: #fff;
+        text-decoration: none;
+        position:relative; }
+        
+        
+        /*ação ao rolar o cursor do mouse no MENU*/
+        .mysite:hover{
+        color: #fff;
+      }
+        
+        
+      /*ação ao rolar o cursor do mouse(PROJECT)*/
+      .mysite:after{
+        content: "";
+        background-color:  rgb(194, 68, 66);
+        width: 0;
+        height: 3px;
+        left: 0;
+        bottom: -1px;
+        position: absolute;
+        transition: 0.9s;
+        }
+        
+        /*ação ao rolar o cursor do mouse(MY SITE)*/
+        .mysite:hover:after{
+        width: 100%;
+        }
+ 
+
+.netflix{
+    color: red;
+    font-size: 25px;
+    padding-left:2% ;
+}
+ 
+ 
+ 
+header{
+  background-color: rgb(35, 35, 35);
+}
+ 
+ 
+.footer{
+  background-color: rgb(35, 35, 35);
+
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Series Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="./serie.css"> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body class="bg-dark">
+    <!-- CABEÇALHO -->
+    <header class="header d-flex fixed-top" style="height: 10%;">
+    <h1 class="netflix fw-bold pt-2">Netflix</h1>
+    <nav class="navbar navbar-nav ms-auto"> 
+        <div class="container text-sm fw-semibold">
+          <a class="mysite navbar-brand" href="../Inicial/">My Site</a>
+          <span class="navbar-toogler-icon"> </span>      
+        </div>  
+        </nav>
+    </header>
+    <!-- FINAL CABEÇALHO  -->
+
+    <!-- SESSAO INICIAL -->
+    <section id="hero" class="hero bg-black" style="height: 100vh;"> 
+        <div class="container fw-semibold">
+            <h1 class="text-white"> Welcome to Netflix</h1>
+            <p class="lead text-white">Watch your favorite series and movies anytime, anywhere.</p>
+            <a href="#services" class="btn btn-danger btn-lg">Saiba Mais </a>
+        </div>
+    
+    </section>
+    <!-- FINAL SESSÃO -->
+
+
+  <!-- CARDS PAI-->
+  <div class="container mt-1 pb-4 gap-4 bg-dark fs-6">
+    <h1 class="text-center py-4">Meus Projetos</h1>
+    <div class="row g-4">
+
+        <!-- Card 1 - BREAKING BAD -->
+        <div class="col-md-4 ">
+            <div class="card">
+                <img src="./breaking-bad.jpg" class="card-img-top" alt="breaking-bad" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold">Breaking Bad</h5>
+                    <p class="card-text">Gênero: Crime, Drama, Suspense</p>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalbreakingbad">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Card 2 - THE MENTALIST -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./mentalista.jpg" class="card-img-top" alt="modalMentalistaLabel" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title">The Mentalist</h5>
+                    <p class="card-text">Gênero: Crime, Investigação, Drama</p>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalMentalista">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+  <!-- Card 3 - PEAKY BLINDERS --> 
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./peaky-blinders.jpeg" class="card-img-top" alt="HTML e CSS" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Peaky Blinders</h5>
+            <p class="card-text">Gênero: Drama, Crime, Histórico</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalpeakyblinders">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Card 4 - SHERLOCK HOLMES -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./sherlock.jpg" class="card-img-top" alt="Bootstrap" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Sherlock Holmes</h5>
+            <p class="card-text">Gênero: Mistério, Drama, Crime</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalsherlock">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - SUITS -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./suits.webp" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Suits</h5>
+            <p class="card-text">Gênero: Drama Jurídico, Comédia, Negócios</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalsuits">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - COLOMBIANA -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./colombiana.jpeg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Colombiana em busca da Vingança</h5>
+            <p class="card-text">Gênero: Drama Jurídico, Comédia, Negócios</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalcolombiana">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Card 5 - LA CASA DE PAPEL -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./la-casa-de-papel2.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Lá Casa de Papel</h5>
+            <p class="card-text">Gênero: Ação, Suspense, Drama </p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalcasadepapel">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - ESCRITORES -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./escritores-liberdade.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Escritores da Liberdade</h5>
+            <p class="card-text">Gênero: Drama Jurídico, Comédia, Negócios</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalescritores">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - X-MEN -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./x-men.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">X-MEN</h5>
+            <p class="card-text">Gênero: Drama Jurídico, Comédia, Negócios</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalxmen">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - COMO EU ERA ANTES DDE VOCE -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./como-eu-era-antes-de-voce.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Como eu era antes de você</h5>
+            <p class="card-text">Gênero: Drama Jurídico, Comédia, Negócios</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalantesdevoce">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 -   BRIDGERTON -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./bridgerton.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Bridgerton</h5>
+            <p class="card-text">Gênero: Ação, Drama, Crime</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalequalizer">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Card 5 -   EQUALIZER -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./the equalizer.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">The Equalizer</h5>
+            <p class="card-text">Gênero: Ação, Drama, Crime</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalequalizer">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - 13 REASONS WHY -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./reasons why.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">13 Reasons Why</h5>
+            <p class="card-text">Gênero: Drama Jurídico, Comédia, Negócios</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal13why">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - LUCIFER-->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./lucifer.jpg" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">Lucifer</h5>
+            <p class="card-text">Gênero: Fantasia, Policial, Drama</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modallucifer">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+  <!-- Card 5 - DEFENDER UM ASSASINO -->
+  <div class="col-md-4">
+    <div class="card">
+        <img src="./defender-assasino2.png" class="card-img-top" alt="Tailwind" height="200px">
+        <div class="card-body">
+            <h5 class="card-title">How to get away with Murder </h5>
+            <p class="card-text">Gênero: Drama, Suspense, Crime</p>
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modaldefenderassasino">Ver mais</button>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Card 7 -  SCANDAL -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="./scandal2.jpg" class="card-img-top" alt="Big Data" height="200px">
+                <div class="card-body">
+                    <h5 class="card-title">Scandal</h5>
+                    <p class="card-text">Gênero: Drama Político, Suspense</p>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalScandal">Ver mais</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+</div>
+
+
+
+<!-- MODAIS -->
+
+<!-- Modal THE MENTALIST -->
+<div class="modal fade " id="modalMentalista" tabindex="-1" aria-labelledby="modalMentalistaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalMentalista">The Mentalist</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sinopse: Patrick Jane (Simon Baker) é um ex-vidente charlatão que agora trabalha como consultor para a polícia da Califórnia. Com sua incrível habilidade de observação e dedução, ele ajuda a resolver crimes enquanto busca vingança contra o assassino serial Red John.      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal BREAKING BAD -->
+<div class="modal fade" id="modalbreakingbad" tabindex="-1" aria-labelledby="modalbreakingbadLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalbreakingbadLabel">Breaking Bad</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sinopse: Walter White (Bryan Cranston), um professor de química com câncer terminal, decide produzir e vender metanfetamina para garantir o futuro financeiro de sua família. Ao lado de seu ex-aluno Jesse Pinkman (Aaron Paul), ele mergulha no submundo do crime, transformando-se no temido "Heisenberg".      </div>
+      <div class="modal-footer">
+        <a href="https://colab.research.google.com/drive/11m0z3HsOyQjwaQYF31zqI3lBJUL1c_Ns" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal SHERLOCK -->
+<div class="modal fade" id="modalsherlock" tabindex="-1" aria-labelledby="modalsherlockLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalsherlockLabel">Sherlock Holmes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Uma adaptação moderna das histórias de Sherlock Holmes escritas por Arthur Conan Doyle. A série acompanha Sherlock Holmes (Benedict Cumberbatch) e seu fiel companheiro, Dr. John Watson (Martin Freeman), enquanto resolvem crimes misteriosos em Londres, usando inteligência, dedução e tecnologia moderna.      </div>
+      <div class="modal-footer">
+        <a href="" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal SUITS -->
+<div class="modal fade" id="modalsuits" tabindex="-1" aria-labelledby="modalsuitsLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalsuitsLabel">Suits</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Mike Ross (Patrick J. Adams) é um jovem brilhante com memória fotográfica, mas sem diploma de direito. Ele acaba sendo contratado pelo renomado advogado Harvey Specter (Gabriel Macht) para trabalhar em um dos maiores escritórios de advocacia de Nova York. Juntos, eles enfrentam casos complicados e tentam manter em segredo o fato de que Mike nunca frequentou a faculdade de direito.      </div>
+      <div class="modal-footer">
+        <a href="" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal PEAKY BLINDERS -->
+<div class="modal fade" id="modalpeakyblinders" tabindex="-1" aria-labelledby="modalpeakyblindersLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalpeakyblinders">Peaky Blinders</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Ambientada na Inglaterra pós-Primeira Guerra Mundial, a série segue Tommy Shelby (Cillian Murphy) e sua família, que lideram a gangue criminosa Peaky Blinders. Eles expandem seu império enquanto enfrentam inimigos perigosos e conflitos políticos.      </div>
+      <div class="modal-footer">
+        <a href="" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal BRIDGERTON-->
+<div class="modal fade" id="modalbridgerton" tabindex="-1" aria-labelledby="modalbridgertonLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalbridgertonLabel">Bridgerton</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Um grupo de criminosos, liderado pelo enigmático "Professor", executa um plano ambicioso para roubar a Casa da Moeda da Espanha. Durante o assalto, enfrentam dilemas emocionais, desafios estratégicos e a pressão da polícia. </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal LA CASA DE PAPEL -->
+<div class="modal fade" id="modalcasadepapel" tabindex="-1" aria-labelledby="modalcasadepapelLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalcasadepapelLabel">La Casa de Papel</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Um grupo de criminosos, liderado pelo enigmático "Professor", executa um plano ambicioso para roubar a Casa da Moeda da Espanha. Durante o assalto, enfrentam dilemas emocionais, desafios estratégicos e a pressão da polícia. </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal THE EQUALIZER -->
+<div class="modal fade" id="modalequalizer" tabindex="-1" aria-labelledby="modalequalizerLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalequalizerLabel">The Equalizerr</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Robyn McCall, uma ex-agente com habilidades excepcionais, decide usar seus talentos para ajudar aqueles que não podem recorrer à justiça. Enquanto protege inocentes, enfrenta inimigos poderosos e lida com seu passado misterioso. </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 13 REASONS WHY -->
+<div class="modal fade" id="modal13why" tabindex="-1" aria-labelledby="modal13whyLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal13whyLabel">13 Reasons Why</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Clay Jensen recebe fitas cassete deixadas por Hannah Baker, sua colega de escola que tirou a própria vida. Nas gravações, ela explica os 13 motivos que a levaram a essa decisão, revelando verdades impactantes sobre seus amigos e inimigos. </div>  
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal X-MEN -->
+<div class="modal fade" id="modalxmen" tabindex="-1" aria-labelledby="modalxmenLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalxmenLabel">X-MEN</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Em um mundo onde mutantes possuem habilidades sobre-humanas, o Professor Xavier lidera um grupo de heróis para proteger a humanidade e lutar contra Magneto, um mutante que acredita que os humanos são inimigos a serem eliminados.</div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal ESCRITORES -->
+<div class="modal fade" id="modalescritores" tabindex="-1" aria-labelledby="modalescritoresLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalescritoresLabel">Escritores da Liberdade</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Baseado em uma história real, o filme segue Erin Gruwell, uma professora idealista que desafia o sistema educacional ao inspirar seus alunos de uma escola problemática a escreverem sobre suas vidas e superarem desafios.</div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal COMO EU ERA ANTES DE VOCE -->
+<div class="modal fade" id="modalantesdevoce" tabindex="-1" aria-labelledby="modalantesdevoceLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalantesdevoceLabel">Como eu era Antes de Você</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Louisa Clark, uma jovem de espírito livre, aceita o trabalho de cuidar de Will Traynor, um homem rico e bem-sucedido que ficou tetraplégico após um acidente. Com o tempo, os dois desenvolvem uma conexão especial que muda suas vidas. </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal COLOMBIANA -->
+<div class="modal fade" id="modalcolombiana" tabindex="-1" aria-labelledby="modalcolombianaLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalcolombianaLabel">Colombiana em Busca da Vingança</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Após testemunhar o assassinato brutal de seus pais quando criança, Cataleya se torna uma assassina altamente treinada. Enquanto trabalha como matadora de aluguel, ela busca vingança contra os responsáveis pela morte de sua família. </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal  LUCIFER -->
+<div class="modal fade" id="modallucifer" tabindex="-1" aria-labelledby="modalluciferLabel" 
+aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalluciferLabel">Lucifer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Lucifer Morningstar, o Senhor do Inferno, decide abandonar seu reino e abrir uma boate em Los Angeles. No entanto, sua vida muda ao começar a ajudar a detetive Chloe Decker a resolver crimes, enquanto enfrenta desafios divinos e humanos.  </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal DEFENDER ASSASINO -->
+<div class="modal fade" id="modaldefenderassasino" tabindex="-1" aria-labelledby="modaldefenderassasinoLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modaldefenderassasinoLabel">How to get away Murder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: A brilhante advogada e professora de direito Annalise Keating seleciona um grupo de alunos para ajudá-la em casos de defesa criminal. No entanto, eles acabam envolvidos em uma série de assassinatos e segredos que ameaçam suas vidas.  </div>
+        <div class="modal-footer">
+        <a href="#" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal SCANDAL -->
+<div class="modal fade" id="modalScandal" tabindex="-1" aria-labelledby="modalScandalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalScandalLabel">Scandal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        📌Sinopse: Olivia Pope (Kerry Washington) é uma ex-consultora da Casa Branca que agora lidera sua própria empresa de gerenciamento de crises. Ela e sua equipe lidam com escândalos políticos e casos de alto nível em Washington, enquanto segredos perigosos são revelados.      </div>
+      <div class="modal-footer">
+        <a href="https://colab.research.google.com/drive/1rJB8Y5D-FUtfljJC_YqRk_SrRgVWo-Hh" class="btn btn-success" target="_blank">Assistir</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fim modal -->
+
+
+<!-- footer -->
+
+<footer class="footer text-white text-center py-4">  
+  <p class="" > emillysoterio@gmail.com </p>
+  <hr>
+ <a href="https://www.instagram.com/e_nicollyy/"> 
+  <img src="../Hobbie/instagram1.png" alt="imagem flexivel" class="elementos" height="30px">
+ </a>
+ <a href="https://web.whatsapp.com/">
+  <img src="../Hobbie/images/whatsapp.png" alt="imagem flexivel" class="elementos" height="30px">
+ </a>
+ <a href="#">
+ <img src="../Hobbie/images/linkedin.png" alt="imagem flexivel" class="elementos" height="30px">
+ </a>
+ <a href="https://www.facebook.com/?locale=pt_BR">
+  <img src="../Hobbie/images/github.png" alt="imagem flexivel" class="elementos" height="30px">
+  </a>
+ <a href="https://www.facebook.com/?locale=pt_BR">
+ <img src="../Hobbie/images/facebook.png" alt="imagem flexivel" class="elementos" height="30px">
+ </a>    
+
+</footer>
+
+</body>
+</html>

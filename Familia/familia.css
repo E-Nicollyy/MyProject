@@ -1,0 +1,47 @@
+   /*estilizando li do menu */
+   a {
+    color: #ffffff;
+    text-decoration: none;
+    position:relative; }
+    
+    
+    /*ação ao rolar o cursor do mouse no MENU*/
+    a:hover{
+    color: #5988ca;
+  }
+    
+    /*ação ao rolar o cursor do mouse(HOBBIE)*/
+    .familia:after{
+    content: "";
+    background-color: rgb(56, 56, 179);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    transition: 0.9s;
+    }
+    
+    /*ação ao rolar o cursor do mouse(HOBBIE)*/
+    .familia:hover:after{
+    width: 100%;
+    }
+    
+    
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .mysite:after{
+    content: "";
+    background-color: rgb(56, 56, 179);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -1px;
+    position: absolute;
+    transition: 0.9s;
+    }
+    
+    /*ação ao rolar o cursor do mouse(PROJECT)*/
+    .mysite:hover:after{
+    width: 100%;
+    }
+    
